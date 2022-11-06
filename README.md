@@ -1,5 +1,8 @@
 # Smartace
 
+This is a project for Hackathon Junction 2022 (Espoo, Finland) made by 'SmartAce'-team.
+Participants: Maksym Bondarenko, Kira Dianova, Yijuan Wei, Karim Benhocine, Wen Xiang.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
 
 ## Development server
