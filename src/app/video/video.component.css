@@ -1,0 +1,81 @@
+.container main {
+    padding-top: 5rem;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.lanuages {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+}
+
+.lanuages li {
+    display: flex;
+}
+
+.lanuages button {
+    flex: 1;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: stretch;
+    height: 1.8em;
+}
+
+.herolanuageses button:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+    left: .1em;
+}
+
+.lanuages button:active {
+    background-color: #525252;
+    color: #fafafa;
+}
+
+.lanuages button.selected {
+    background-color: black;
+    color: white;
+}
+
+.lanuages button.selected:hover {
+    background-color: #505050;
+    color: white;
+}
+
+.lanuages button.selected:active {
+    background-color: black;
+    color: white;
+}
+
+.lanuages .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    background-color: #3095f9;
+    line-height: 1em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+.lanuages .name {
+    align-self: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}

@@ -1,0 +1,48 @@
+<div class="container">
+  <main>
+    <div class="py-5 text center">
+      <h1>Upload video content</h1>
+      <!-- Upload video -->
+      <input type="file" class="file-upload" (change)="uploadVideo($event)">
+
+      <!-- From which language translate -->
+      <h2>From Language: {{fromLanguage}}</h2>
+      <ul class="lanuages">
+        <li *ngFor="let language of languages">
+          <button type="button" (click)="selectFromLanguage(language)">
+          <span class="badge">{{language.code}}</span>
+          <span class="name">{{language.name}}</span>
+          </button>
+        </li>
+      </ul>
+
+      <!-- To which language translate -->
+      <h2>To Language: {{toLanguage}}</h2>
+      <ul class="lanuages">
+        <li *ngFor="let language of languages">
+          <button type="button" (click)="selectToLanguage(language)">
+          <span class="badge">{{language.code}}</span>
+          <span class="name">{{language.name}}</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <hr class="my-4">
+    <button class="w-100 btn btn-primary btn-lg" (click)="getTranslatedText()">Submit</button>
+    <hr class="my-4">
+    
+    <!-- Generated text and translation -->
+    <div *ngIf="showRecognizedText == true" class="terminal">
+      <h3>Recognized text:</h3>
+      <pre>{{recognizedText}}</pre>
+    </div>
+    <div *ngIf="showTranslatedText == true" class="terminal">
+      <h3>Translated text: </h3>
+      <pre>{{translatedText}}</pre>
+    </div>
+    <div *ngIf="showRecognizedText == true && showTranslatedText == true" class="container">
+      <img src="../../assets/picture.jpg" alt="example_picture" width="500px">
+      <div class="centered">Hello and welcome <br/> to our Junction <br/> Hackathon 2022!</div>
+    </div>
+  </main>
+</div>
