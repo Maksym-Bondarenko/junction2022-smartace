@@ -11,7 +11,7 @@ This repository contains all the files that were created during the Junction2022
 
 .
 ├── src                        # frontend mockup
-├── python_speech-translation  # python ML logic for NLP speech recognition and translation from the video
+├── backend                    # python ML logic for NLP speech recognition and translation from the video
 ├── figma                      # design of the application
 └── video                      # submission video
 
