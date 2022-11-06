@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-video',
@@ -15,6 +16,9 @@ export class VideoComponent implements OnInit {
   fromLanguage = 'Chinese';
   toLanguage = 'English';
   pathToVideo;
+  responseData;
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
     this.languages = [
@@ -45,7 +49,18 @@ export class VideoComponent implements OnInit {
     console.log("File: " + this.pathToVideo);
     console.log("From: " + this.fromLanguage);
     console.log("To: " + this.toLanguage);
-    
+
+    // sent HTTP request to backend part
+    let payload = {
+      "file": this.pathToVideo,
+      "from": this.fromLanguage,
+      "to": this.toLanguage,
+      "data": 'dummy'
+    }
+    // this.http.put<any>('http://127.0.0.1:5000/', payload)
+    //     .subscribe(data => this.responseData = data);
+    // console.log(this.responseData);
+
     this.showRecognizedText = true;
     this.recognizedText = 'Hallo und herzlich willkommen zu unsere Junction Hackathon 2022!';
     this.showTranslatedText = true;

@@ -1,9 +1,19 @@
 # Smartace
 
 This is a project for Hackathon [Junction2022](https://www.junction2022.com/) (Espoo, Finland) made by 'SmartAce'-team for [smartly.io](https://www.smartly.io/).
-Participants: Maksym Bondarenko, Kira Dianova, Yijuan Wei, Karim Benhocine, Wen Xiang.
+Team members: Maksym Bondarenko, Kira Dianova, Yijuan Wei, Karim Benhocine, Wen Xiang.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+
+## Files structure
+
+This repository contains all the files that were created during the Junction2022 Hackathon.
+
+.
+├── src                        # frontend mockup
+├── python_speech-translation  # python ML logic for NLP speech recognition and translation from the video
+├── figma                      # design of the application
+└── video                      # submission video
 
 ## Development server
 
