@@ -4,6 +4,7 @@ This is a project for Hackathon [Junction2022](https://www.junction2022.com/) (E
 Team members: Maksym Bondarenko, Kira Dianova, Yijuan Wei, Karim Benhocine, Wen Xiang.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+The project uses Bootstrap CSS Framework and Angular Material UI library (using best practices, guidelines and elements from official examples).
 
 ## Files structure
 
@@ -14,7 +15,7 @@ This repository contains all the files that were created during the Junction2022
 ├── backend                    # python ML logic for NLP speech recognition and translation from the video
 ├── figma                      # design of the application
 ├── miro                       # planning of development-process
-└── video                      # submission video
+└── video                      # video
 
 ## Development server
 
