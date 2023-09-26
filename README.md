@@ -32,3 +32,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Screenshots
+
+![image](https://github.com/Maksym-Bondarenko/junction2022-smartace/assets/45164667/64ab0b81-1df2-4639-840d-f4fbb68cbe7e)
+
+![image](https://github.com/Maksym-Bondarenko/junction2022-smartace/assets/45164667/ad1c0b7e-a294-48c5-834f-fd7f97427b32)
